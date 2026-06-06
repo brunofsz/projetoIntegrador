@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Medida Protetiva</title>
+    <link rel="stylesheet" href="../css/cadastro.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Cadastrar Medida Protetiva</h1>
+        <p>Preencha os dados abaixo para registrar uma nova medida protetiva.</p>
+
+        <form id="formMedida">
+            <div class="grupo">
+                <label>Nome completo da pessoa protegida:</label>
+                <input type="text" id="protegida" required>
+            </div>
+
+            <div class="grupo">
+                <label>Nome completo da pessoa denunciada:</label>
+                <input type="text" id="denunciada" required>
+            </div>
+
+            <div class="grupo">
+                <label>Grau de risco:</label>
+                <select id="risco" required>
+                    <option value="">Selecione</option>
+                    <option>Baixo</option>
+                    <option>M&eacute;dio</option>
+                    <option>Alto</option>
+                    <option>Cr&iacute;tico</option>
+                </select>
+            </div>
+
+            <div class="grupo">
+                <label>Situa&ccedil;&atilde;o atual:</label>
+                <select id="situacao" required>
+                    <option value="">Selecione</option>
+                    <option>Ativa</option>
+                    <option>Suspensa</option>
+                    <option>Encerrada</option>
+                </select>
+            </div>
+
+            <div class="grupo">
+                <label>Setor respons&aacute;vel:</label>
+                <select id="setor" required>
+                    <option value="">Selecione</option>
+                    <option>Centro</option>
+                    <option>Norte</option>
+                    <option>Sul</option>
+                    <option>Leste</option>
+                    <option>Oeste</option>
+                    <option>Zona Rural</option>
+                </select>
+            </div>
+
+            <div class="grupo">
+                <label>Tipo de medida:</label>
+                <select id="tipo" required>
+                    <option value="">Selecione</option>
+                    <option>Afastamento do lar</option>
+                    <option>Proibi&ccedil;&atilde;o de aproxima&ccedil;&atilde;o</option>
+                    <option>Proibi&ccedil;&atilde;o de contato</option>
+                    <option>Suspens&atilde;o de porte de arma</option>
+                    <option>Outras</option>
+                </select>
+            </div>
+
+            <div class="grupo campo-largo">
+                <label>Endere&ccedil;o:</label>
+                <input type="text" id="endereco" required>
+            </div>
+
+            <div class="grupo campo-largo">
+                <label>Informa&ccedil;&otilde;es adicionais:</label>
+                <textarea id="informacoes" rows="4"></textarea>
+            </div>
+
+            <button type="submit" class="btn">Salvar Medida Protetiva</button>
+            <a href="./medidas.html" class="btn btn2">Cancelar</a>
+        </form>
+    </div>
+
+</body>
+
+</html>

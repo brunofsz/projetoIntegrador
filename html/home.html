@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet.heat/dist/leaflet-heat.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
+    <script type="module" src="../js/home.js" defer></script>
+</head>
+
+<body>
+
+    <header class="top">
+        <div class="topContent">
+            <button class="btnNavbar" id="btnNavbar" aria-label="Abrir menu">
+                <i class="fa-sharp-duotone fa-solid fa-circle-chevron-down"></i>
+            </button>
+            <div class="text">
+                <h1>Painel Principal</h1>
+                <p>Patrulha Maria da Penha - Mogi Mirim</p>
+            </div>
+        </div>
+        <img src="../assets/Logo.jpeg" alt="Logo da Patrulha Maria da Penha de Mogi Mirim" class="logo">
+
+    </header>
+
+    <nav class="navbar" id="navbar">
+        <a href="home.html" class="navLink active">Home</a>
+        <a href="error.html" class="navLink">Medidas</a>
+        <a href="error.html" class="navLink">Ocorr&ecirc;ncias</a>
+        <a href="error.html" class="navLink">V&iacute;timas</a>
+        <a href="error.html" class="navLink">Agressores</a>
+        <a href="error.html" class="navLink">Acompanhamentos</a>
+        <a href="error.html" class="navLink">Usu&aacute;rios</a>
+        <a href="error.html" class="navLink">Relat&oacute;rios</a>
+        <a href="../index.html" class="navUsuario">
+            <i class="fa-solid fa-circle-user"></i>
+            <div>
+                <span>Sair</span>
+                <small>Administrador</small>
+            </div>
+        </a>
+    </nav>
+
+
+    <div class="container">
+
+        <div class="alinhaCards">
+            <div class="card infoCard">
+                <h3>Atendimentos (mês)</h3>
+                <h1 id="atendimentos">-</h1>
+                <label id="atendimentosVariacao" class="mid">-% vs mês anterior</label>
+            </div>
+            <div class="card infoCard">
+                <h3>Medidas protetivas vigentes</h3>
+                <h1 id="medidasProtetivas">-</h1>
+                <label id="MPVariacao" class="mid">-% vs mês anterior</label>
+            </div>
+            <div class="card infoCard">
+                <h3>Ocorrências Registradas</h3>
+                <h1 id="ocorrencias">-</h1>
+                <label id="ocorrenciasVariacao" class="mid">-% vs mês anterior</label>
+            </div>
+            <div class="card infoCard">
+                <h3>Encaminhamentos (mês)</h3>
+                <h1 id="encaminhamentos">-</h1>
+                <label id="encaminhamentosVariacao" class="mid">-% vs mês anterior</label>
+            </div>
+            <div class="card infoCard">
+                <h3>Visitas Domiciliares</h3>
+                <h1 id="visitasDomiciliares">-</h1>
+                <label id="visitasVariacao" class="mid">-</label>
+            </div>
+        </div>
+
+        <div class="alinhaCharts">
+            <div class="card charts">
+                <h3>Atendimentos por Mês</h3>
+                <canvas id="chart1">
+                </canvas>
+            </div>
+            <div class="card charts">
+                <h3>Tipos de Violência - top 5</h3>
+                <canvas id="chart2"></canvas>
+            </div>
+            <div class="card charts">
+                <h3>Status dos casos</h3>
+                <canvas id="chart3"></canvas>
+            </div>
+            <div class="card charts">
+                <h3>Ocorrência por Bairro</h3>
+                <canvas id="chart4"></canvas>
+            </div>
+        </div>
+
+        <div class="card mapa" id="map">
+
+        </div>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medidas Protetivas | Feito</title>
+    <link rel="stylesheet" href="../css/medidas.css">
+</head>
+
+<body>
+    <header class="topo">
+        <div>
+            <h1>Medidas Protetivas</h1>
+            <p>Consulta, organiza&ccedil;&atilde;o e acompanhamento dos registros cadastrados.</p>
+        </div>
+        <div class="acoes-topo">
+            <a href="./home.html" class="btn btn-secundario">Voltar</a>
+            <a href="./cadastro.html" class="btn btn-principal">Nova medida</a>
+        </div>
+    </header>
+
+    <main class="conteudo">
+        <section class="filtros">
+            <div class="campo">
+                <label for="busca">Buscar</label>
+                <input type="text" id="busca" placeholder="Nome da pessoa protegida ou denunciada">
+            </div>
+
+            <div class="campo">
+                <label for="situacao">Situa&ccedil;&atilde;o</label>
+                <select id="situacao">
+                    <option>Todas</option>
+                    <option>Ativa</option>
+                    <option>Suspensa</option>
+                    <option>Encerrada</option>
+                </select>
+            </div>
+
+            <div class="campo">
+                <label for="risco">Grau de risco</label>
+                <select id="risco">
+                    <option>Todos</option>
+                    <option>Baixo</option>
+                    <option>M&eacute;dio</option>
+                    <option>Alto</option>
+                    <option>Cr&iacute;tico</option>
+                </select>
+            </div>
+        </section>
+
+        <section class="lista">
+            <article class="registro">
+                <div class="registro-topo">
+                    <h2>Ana Souza</h2>
+                    <span class="status ativa">Ativa</span>
+                </div>
+                <p><strong>Pessoa denunciada:</strong> Carlos Souza</p>
+                <p><strong>Risco:</strong> Alto</p>
+                <p><strong>Setor:</strong> Norte</p>
+                <p><strong>Tipo de medida:</strong> Proibi&ccedil;&atilde;o de aproxima&ccedil;&atilde;o</p>
+                <div class="acoes-registro">
+                    <a href="../CadastroMedAdm/cadastro.html">Ver detalhes</a>
+                    <a href="../CadastroMedAdm/cadastro.html" class="btn-editar">Editar</a>
+                </div>
+            </article>
+
+            <article class="registro">
+                <div class="registro-topo">
+                    <h2>Mariana Lima</h2>
+                    <span class="status suspensa">Suspensa</span>
+                </div>
+                <p><strong>Pessoa denunciada:</strong> Roberto Lima</p>
+                <p><strong>Risco:</strong> M&eacute;dio</p>
+                <p><strong>Setor:</strong> Centro</p>
+                <p><strong>Tipo de medida:</strong> Afastamento do lar</p>
+                <div class="acoes-registro">
+                    <a href="../CadastroMedAdm/cadastro.html">Ver detalhes</a>
+                    <a href="../CadastroMedAdm/cadastro.html" class="btn-editar">Editar</a>
+                </div>
+            </article>
+
+            <article class="registro">
+                <div class="registro-topo">
+                    <h2>Patricia Alves</h2>
+                    <span class="status encerrada">Encerrada</span>
+                </div>
+                <p><strong>Pessoa denunciada:</strong> Eduardo Alves</p>
+                <p><strong>Risco:</strong> Baixo</p>
+                <p><strong>Setor:</strong> Sul</p>
+                <p><strong>Tipo de medida:</strong> Proibi&ccedil;&atilde;o de contato</p>
+                <div class="acoes-registro">
+                    <a href="../CadastroMedAdm/cadastro.html">Ver detalhes</a>
+                    <a href="../CadastroMedAdm/cadastro.html" class="btn-editar">Editar</a>
+                </div>
+            </article>
+        </section>
+    </main>
+</body>
+
+</html>
